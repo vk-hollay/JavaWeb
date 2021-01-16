@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+	<book sn="SN12341232">
+		<name>辟邪剑谱</name>
+		<price>9.9</price>
+		<author>&lt;班主任&gt;</author> <!--特殊字符要用转义字符-->
+	</book>
+	<book sn="SN12341231">
+		<name>葵花宝典</name>
+		<price>99.99</price>
+		<author>
+			<!--CDATA语法可以告诉xml解析器，我CDATA里的文本内容，只是纯文本，不需要xml 语法解析-->
+			<![CDATA[
+				<<<<班长>>>>
+			]]>
+		</author>
+	</book>
+	<!--也可以写成单标签-->
+	<book sn="SN4551669" name="人间失格" price="42.6" author="太宰治" />
+
+</books>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery表格可拖动调整改变列宽度特效</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jq.resizableColumns.js"></script>
+
+    <style type="text/css">
+        table{
+            empty-cells:show;
+            border-collapse:collapse;
+            border-spacing:0;
+            width: 660px;
+            /*加 margin:100px auto会影响拖拉宽度效果*/
+        }
+        th,td{
+            border:solid 1px #ddd;
+            text-align:left;
+            padding:10px;
+            font-size:14px;
+        }
+        .rc-handle-container{
+            position:relative;
+        }
+        .rc-handle{
+            position:absolute;
+            width:7px;
+            cursor:ew-resize;
+            *cursor:pointer;
+            margin-left:-3px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            $("table").resizableColumns({});
+        })
+    </script>
+</head>
+<body>
+<div>
+    <h2 align="center">jQuery拖动调整表格列宽度（有些小bug）</h2>
+    <table border="1" width="100%" align="center">
+        <thead>
+            <tr>
+                <th width="6%">序</th>
+                <th width="21%">标题</th>
+                <th width="21%">内容</th>
+                <th width="52%" data-noresize>说明</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>哈哈哈</td>
+                <td>可拖拽</td>
+                <td>最后一列加data-noresize所以不能拖动</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>哈哈哈</td>
+                <td>可拖拽</td>
+                <td>最后一列加data-noresize所以不能拖动</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>哈哈哈</td>
+                <td>可拖拽</td>
+                <td>最后一列加data-noresize所以不能拖动</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

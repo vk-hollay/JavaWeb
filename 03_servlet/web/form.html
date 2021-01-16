@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    -----------获取请求参数示例（doGet/doPost）：--------------<br/><br/>
+    <form action="/03_servlet/parameterServlet" method="post">
+        用户名：<input type="text" name="username"><br/>
+        密  码：<input type="password" name="password"><br/>
+        兴趣爱好： <input type="checkbox" name="hobby" value="cpp">C++
+                  <input type="checkbox" name="hobby" value="java">Java
+                  <input type="checkbox" name="hobby" value="js">JavaScript<br/>
+        <input type="submit">
+    </form>
+
+    <br/><br/>
+    -----------HttpServletRequest 类的常用方法示例：--------------<br/><br/>
+    <form action="/03_servlet/requestAPIServlet">
+        <input type="submit">
+    </form>
+
+
+    <br/><br/>
+    -----------请求转发示例：--------------<br/>
+    Servlet1跳转Servlet2<br/>
+    （特点：为一次请求；浏览器地址栏没有变化，仍在/servlet1那里；Servlet1和Servlet2共享Request域中的数据）<br/><br/>
+    <form action="/03_servlet/servlet1">
+        用户名：<input type="text" name="username"><br/>
+        <input type="submit">
+    </form>
+
+    <br/><br/>
+    -----------给客户端回传字符串数据：--------------<br/><br/>
+    <form action="/03_servlet/responseIOServlet">
+        <input type="submit">
+    </form>
+
+    <br/><br/>
+    -----------请求重定向：--------------<br/><br/>
+    Response1跳转Response2<br/>
+    （特点：为两次请求；浏览器地址栏发生变化，变为新地址；Response1和Response2不共享Requset域中的数据）
+    <form action="/03_servlet/response1">
+        <input type="submit">
+    </form>
+</body>
+</html>

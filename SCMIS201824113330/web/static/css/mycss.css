@@ -1,0 +1,95 @@
+.login_background {
+    background-image: url("../img/background.jpg");
+}
+.login_page {
+    margin: 110px auto;
+    width: 430px;
+}
+.my-login-form {
+    opacity: 0.7;
+    padding-top: 42px;
+    padding-left: 31px;
+    padding-bottom: 20px;
+    background-color: white;
+    border-radius: 15px;/*边框圆角*/
+    box-shadow: 0 2px 2px 2px #e6e6e6;/*边框阴影*/
+    width: 400px;
+}
+.my-login-input {
+    width: 260px;
+}
+.my-table-style {
+    margin: 0 auto;
+    /*width: 660px;*/
+    text-align: center;
+}
+.my-th {
+    text-align: center;
+}
+
+.my-search-add {
+    /*border: 1px solid;*/
+    margin: 0 auto;
+    /*width: 660px;*/
+    /*width: 420px;*/
+    /*width:100%;*/
+    margin-bottom: 10px;
+}
+#modifyPwd {
+    margin-left: 22px;
+    margin-top: 20px
+}
+#modify-pwd-btn {
+    float: right !important;
+    margin-right: 30px;
+}
+
+.mystyle {
+    margin: 20px auto;
+    width: 400px;
+}
+
+.Pop-up-form {
+    /*margin-top: 7px;*/
+    width: 20%;
+    margin-right: -10px;
+}
+
+.sumbit-btn {
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+.aa a {
+    text-decoration: none;
+}
+
+.qq {
+    /*border: 1px solid;*/
+}
+span.col-xs-3, div.col-xs-3, select.col-xs-3 {
+    /*border: 1px solid;*/
+    margin-left: -8px;
+    margin-right: -9px;
+    width: auto;
+    font-size: 16px;
+}
+div>input{
+    /*padding-top: 4px;*/
+}
+span[class|="col"] {
+    font-size: 16px;
+}
+
+.my-select {
+    border:none;
+    outline:none;
+    text-align:center;
+}
+
+.input-group {
+    /*display: inline-block;*/
+    /*vertical-align: middle !important;*/
+}
