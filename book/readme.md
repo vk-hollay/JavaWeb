@@ -51,8 +51,9 @@
         * 如何确保所有操作都使用同一个Connection连接对象?
             * 我们可以使用ThreadLocal对象。来确保所有操作都使用同一个Connection对象。
             * ThreadLocal要确保所有操作都使用同一个Connection连接对象，那么操作的前提条件是所有操作都必须在同一个线程中完成!!!
-10. 请求重定向路径要写绝对路径（即前面要加上项目名）`resp.sendRedirect(req.getContextPath() + "/pages/client/department.jsp");`<br/>
-请求转发则可写相对路径`req.getRequestDispatcher("pages/client/department.jsp").forward(req, resp);`
+10. 请求重定向路径要写绝对路径（即路径前面要加上项目名称）`resp.sendRedirect(req.getContextPath() + "/pages/client/department.jsp");`<br/>
+请求转发则可写相对路径（路径前面不用加项目名称）`req.getRequestDispatcher("pages/client/department.jsp").forward(req, resp);`<br/>
+另一点区别：请求转发可以访问项目的WEB-INF目录下的文件，而请求重定向不可以。
 
 ### Thinking：
 1. 市面上购物车的实现技术版本有:
